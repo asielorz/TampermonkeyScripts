@@ -35,7 +35,7 @@
             let minutes = parseInt(elem.outerText.split('\n')[0].split(':')[0])
             if (minutes === NaN || minutes < 30)
             {
-                elem.remove();
+                elem.parentElement.remove();
             }
         }
         await sleep(1000);
